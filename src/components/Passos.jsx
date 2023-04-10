@@ -3,7 +3,7 @@ import {AiOutlineUserAdd} from 'react-icons/ai'
 import {BsHouseAdd} from 'react-icons/bs'
 import {BiHappyHeartEyes} from 'react-icons/bi'
 
-function Passos({passoAtual}) {
+export function Passos({passoAtual}) {
     return ( <SCPassosContainer>
         <SCPasso ativo={passoAtual == 0 ? true : false}>
             <AiOutlineUserAdd /> Dados pessoais
@@ -17,4 +17,3 @@ function Passos({passoAtual}) {
     </SCPassosContainer> );
 }
 
-export default Passos;
