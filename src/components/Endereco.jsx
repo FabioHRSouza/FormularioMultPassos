@@ -6,40 +6,58 @@
 
 //Esse componente é referente ao 2° passo do cadastro.
 
-export const EnderecoForm = () => {
+export function EnderecoForm() {
     return (
         <div>
-            <h2>Endereço</h2>
-            <div>
-                <div>
-                    <label htmlFor="logradouro">Logradouro:</label>
-                    <input type="text" className="form-control" id="logradouro" placeholder="Digite o seu Logradouro" />
+            <div className="col-12">
+                <label className="form-label" htmlFor="logradouro">Logradouro:</label>
+                <div className="input-group mb-3 col-12">
+                    <input type="text" className="form-control" name="logradouro" id="logradouro" placeholder="Logradouro" required />
                 </div>
-                <div>
-                    <label htmlFor="numero">Número:</label>
-                    <input type="text" className="form-control" id="numero" placeholder="Digite o seu Número" />
+            </div>
+            <div className="row">
+                <div className="col-4">
+                    <label className="form-label" htmlFor="numero">Nº:</label>
+                    <div className="input-group">
+                        <input type="text" className="form-control" name="numero" id="numero" placeholder="Nº" required />
+                    </div>
                 </div>
-                <div>
-                    <label htmlFor="complemento">Complemento:</label>
-                    <input type="text" className="form-control" id="complemento" placeholder="Digite o seu Complemento" />
+                <div className="col-8">
+                    <label className="form-label" htmlFor="complemento">Complemento:</label>
+                    <div className="input-group">
+                        <input type="text" className="form-control" name="complemento" id="complemento" placeholder="Complemento" />
+                    </div>
                 </div>
-                <div>
-                    <label htmlFor="bairro">Bairro:</label>
-                    <input type="text" className="form-control" id="bairro" placeholder="Digite o seu Bairro" />
+            </div>
+            <div className="row">
+                <div className="col-6">
+                    <label className="form-label" htmlFor="bairro">Bairro:</label>
+                    <div className="input-group">
+                        <input type="text" className="form-control" name="bairro" id="bairro" placeholder="Bairro" required />
+                    </div>
                 </div>
-                <div>
-                    <label htmlFor="cep">Cep:</label>
-                    <input type="text" className="form-control" id="cep" placeholder="Digite o seu Cep" />
+                <div className="col-6">
+                    <label className="form-label" htmlFor="cidade">Cidade:</label>
+                    <div className="input-group">
+                        <input type="text" className="form-control" name="cidade" id="cidade" placeholder="Cidade" required />
+                    </div>
                 </div>
-                <div>
-                    <label htmlFor="cidade">Cidade:</label>
-                    <input type="text" className="form-control" id="cidade" placeholder="Digite o seu Cidade" />
+            </div>
+            <div className="row">
+                <div className="col-6">
+                    <label className="form-label" htmlFor="cep">CEP:</label>
+                    <div className="input-group">
+                        <input type="text" className="form-control" name="cep" id="cep" placeholder="CEP" required />
+                    </div>
                 </div>
-                <div>
-                    <label htmlFor="estado">Estado:</label>
-                    <input type="text" className="form-control" id="estado" placeholder="Digite o seu Estado" />
+                <div className="col-6">
+                    <label className="form-label" htmlFor="estado">Estado:</label>
+                    <div className="input-group">
+                        <input type="text" className="form-control" name="estado" id="estado" placeholder="Estado" required />
+                    </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
+
